@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="./assets/calendar.png" type="image/x-icon">
+  <title>Calculadora de Datas</title>
+</head>
+
+<body>
+
+  <main id="container">
+
+    <img src="./assets/Calendar-icon.png" alt="Calendar icon" id="logoImage">
+
+    <h1>Calculadora de Datas</h1>
+
+    <div class="inputBox">
+      <label for="inputData">Insira uma data:</label>
+      <input type="date" id="inputData" class="input">
+    </div>
+
+    <div class="inputBox">
+      <label for="inputDias">Insira a quantidade de dias:</label>
+      <input type="number" id="inputDias" min="1" step="1" class="input" placeholder="0">
+    </div>
+
+    <div class="inputBox">
+      <label for="selectTipoDias">Selecione o tipo de dias:</label>
+      <select id="selectTipoDias" class="input">
+        <option value="corridos">Dias Corridos</option>
+        <option value="uteis">Dias Úteis</option>
+      </select>
+    </div>
+
+    <button onclick="somarDias()">Calcular</button>
+
+    <div id="resultado"></div>
+
+  </main>
+
+  <script src="scripts.js"></script>
+
+</body>
+
+</html>
